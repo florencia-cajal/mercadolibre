@@ -1,0 +1,34 @@
+:root{
+    /*COLORES*/
+    --amarillo:#EAC926;
+    --azul:#03264C;
+    --celeste:#1259c3;
+    --grisOscuro:#666;
+    --grisClaro:#ebebeb;
+    --verde:#39b54a;
+
+    /*TIPOGRAFIA*/
+    --FamilyRoboto:'Roboto', sans-serif;
+
+    /*TAMAÑO DE TIPOGRAFIA*/
+    --cuerpodetexto: 12px;
+    --TitularesVisitasOferta: 24px;
+    --Precios: 18px;
+    --Descuentos: 16px;
+    --Descripciones: 16px;
+
+    /*FOOTER ICONOS*/
+    --iconos:2em;
+}
+
+*{
+    font-family: var(--FamilyRoboto);
+}
+
+body{
+    background-color: var(--amarillo);
+}
+
+footer{
+    background-color: white;
+}
