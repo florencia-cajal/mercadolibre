@@ -1,46 +1,124 @@
-.home-body {}
+.home-header {}
 
 .home-header {
-    background-color: var(--amarillo);
+    background-color: yellow;
+    padding: 25px;
 }
 
-.home-header img.logo {
-    width: 134px;
-    margin: 34px;
+.home-header div.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-.home-header div input {
-    width: 180px;
-    margin-left: 20px;
-    text-align: center;
+.home-header .top-bar .logo-container {
+    width: 50%;
+    max-width: 40vw;
 }
 
-.home-header p.texto {
+.home-header .top-bar .logo-container img.logo {
+    width: 100%;
+    height: auto;
+}
+
+.home-header div.top-bar div.text {
+    width: 50%;
+    max-width: 192px;
+}
+
+.home-header .top-bar .text form input {
+    width: 159px;
+}
+
+.home-header div.top-bar p.cuerpo-texto {
     text-align: center;
     font-size: var(--cuerpoTexto);
 }
 
-.home-header nav {
-    margin-bottom: 10px;
-    font-size: var(--cuerpoTexto);
+.home-header .nav-principal {
+    display: none;
 }
 
-.home-header ul.list-nav-principal, ul.list-nav-login {
+.home-header .nav-principal ul.list-nav-principal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.home-header.nav-principal ul.list-nav-login {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-
-
-.home-header div.burger-menu {
+.home-heder div.burger-menu {
     text-align: center;
 }
 
 .home-header div.burger-menu i {
-    color: white;
+    color: var(--blanco);
     margin: 10px;
     padding: 10px;
     background-color: var(--celeste);
+}
+
+@media (min-width: 361px) {
+    .home-heder {}
+
+    .home-header {} 
+    .home-heder .top-bar .logo-container {
+        max-width: 32vw;
+    }
+    
+    .home-heder .top-bar .text form input {
+        width: 170px;
+    }
+    
+    .home-heder .nav-principal {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .home-header .nav-principal ul.list-nav-principal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .home-header .nav-principal .list-nav-principal li {
+        margin: 0 5px;
+    }
+    .home-header .nav-principal ul.list-nav-login {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .home-header .nav-principal .list-nav-login li {
+        margin: 0 5px;
+    }
+    
+    .home-header .nav-principal .list-nav-login li a {}
+    
+    .home-header div.burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .home-body {}
+    .home-header{
+        background-color: var(--amarillo);
+    }
+
+    .home-header div.top-bar {
+        justify-content: space-between;
+    }
+    
+    .home-header .top-bar .logo-container {
+        max-width: 33vw;
+    }
+    
+    
+
 }
