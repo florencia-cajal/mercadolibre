@@ -1,86 +1,72 @@
-.main-home {
+.home-main {
     background-color: var(--grisClaro);
   }
   
-  .main-home img {
+  .home-main img {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* ------ SECCIÓN BASADO EN TU ULTIMA VISITA --------- */
   
-  .main-home section.visita {
+  .home-main section.ultima-visita {
   }
   
-  .main-home section.visita h2 {
+  .home-main section.ultima-visita h2 {
     text-align: center;
     font-size: var(--titulares);
     color: var(--grisOscuro);
-  }
-  
-  .main-home section.visita article {
-  }
-  
-  .main-home section.visita article img {
-    width: 30vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .main-home section.visita article .precio {
-    max-width: 1200px;
-    font-size: var(--precios);
-  }
-  
-  .main-home section.visita article .descuentos {
-    max-width: 1200px;
-    font-size: var(--descuentos);
-  }
-  
-  .main-home section.visita article h4 {
   }
   
 
-  
-  .main-home section.ofertas {
-  }
-  
-  .main-home section.ofertas h2 {
-    text-align: center;
-    font-size: var(--titulares);
-    color: var(--grisOscuro);
-  }
-  
-  .main-home section.ofertas article {
-  }
-  
-  .main-home section.ofertas article img {
+  .home-main section.ultima-visita article img {
     width: 30vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .main-home section.ofertas article p.precio {
+  .home-main section.ultima-visita article .precio {
     max-width: 1200px;
     font-size: var(--precios);
   }
   
-  .main-home section.ofertas article p.descuentos {
+  .home-main section.ultima-visita article .descuentos {
     max-width: 1200px;
     font-size: var(--descuentos);
   }
   
-  .main-home section.ofertas article h4 {
+  
+  .home-main section.ofertas h2 {
+    text-align: center;
+    font-size: var(--titulares);
+    color: var(--grisOscuro);
+  }
+
+  
+  .home-main section.ofertas article img {
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  /* ------ MEDIA QUERIES --------- */
+  .home-main section.ofertas article p.precio {
+    max-width: 1200px;
+    font-size: var(--precios);
+  }
+  
+  .home-main section.ofertas article p.descuentos {
+    max-width: 1200px;
+    font-size: var(--descuentos);
+  }
+  
+  
+  /* vista celular */
   
   @media (min-device-width: 320px) and (max-device-width: 480px) {
-    .main-home section.visita article img, .main-home section.ofertas article img {
+    .home-main section.ultima-visita article img, .home-main section.ofertas article img {
       width: 50vw;
       height: 50vw;
     }
